@@ -6,9 +6,12 @@ public class StartupTester {
     Startup startup = new Startup();
     public static void main(String[] args) {
          StartupTester stt = new StartupTester();
-         System.out.println(stt.setPositionTest());
-         System.out.println(stt.setNameTest());
-         System.out.println(stt.checkTest());
+         stt.runTests();
+    }
+    public void runTests() {
+         System.out.println(setPositionTest());
+         System.out.println(setNameTest());
+         System.out.println(checkTest());
     }
     public String setPositionTest() {
         String testResult = "passed" ;

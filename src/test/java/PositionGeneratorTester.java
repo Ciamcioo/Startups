@@ -8,13 +8,15 @@ public class PositionGeneratorTester {
     
     public static void main(String[] args){
         PositionGeneratorTester pgt = new PositionGeneratorTester();
-        System.out.println(pgt.generatePositionTester()); 
-        System.out.println(pgt.converToLetterTest());
-        System.out.println(pgt.validPositionTest());
-        System.out.println(pgt.generatePostionArrayTest());
-        System.out.println(pgt.generateIncrementValueTest());
-
+        pgt.runTests();
     } 
+    public void runTests() {
+        System.out.println(generatePositionTester()); 
+        System.out.println(converToLetterTest());
+        System.out.println(validPositionTest());
+        System.out.println(generatePostionArrayTest());
+        System.out.println(generateIncrementValueTest());
+    }
     
     public String generatePositionTester() {
         String testResult = "passed";
